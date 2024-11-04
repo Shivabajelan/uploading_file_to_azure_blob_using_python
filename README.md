@@ -41,28 +41,16 @@ To upload a file, call the UploadToBlobStorage function and provide:
 * file_path: Local path of the file you want to upload.
 * file_name: Desired path and name of the file in Azure Blob Storage.
 
-![image](https://github.com/user-attachments/assets/65f0e39e-b78d-4d61-9d5d-cd9a35264026)
+** Here is the Python code. Replace the Azure Storage Credentials, specify your desired file_path, file_name, and easily upload your data on the strage in Azure.**
+![image](https://github.com/user-attachments/assets/85695f24-1cd7-4c06-aa65-726bd2c02778)
 
-
+### This is what I did in the block of code:
 # Define Azure Storage credentials
-storage_account_key = "<Your-Account-Key>"
-storage_account_name = "<Your-Account-Name>"
-connection_string = "<Your-Connection-String>"
-container_name = "<Your-Container-Name>"
 
 # Define function to upload files to Azure Blob Storage
-def UploadToBlobStorage(file_path, file_name):
-    # Connect to Blob Service
-    blob_service_client = BlobServiceClient.from_connection_string(connection_string)
-    blob_client = blob_service_client.get_blob_client(container=container_name, blob=file_name)
-
-    # Read the file in binary mode and upload
-    with open(file_path, "rb") as data:
-        blob_client.upload_blob(data)
-    print(f"File {file_name} is uploaded to Azure Blob Storage {container_name} successfully")
 
 # Call the function with your file path and desired blob name
-UploadToBlobStorage('path/to/your/local/file.pdf', 'MyFolder/YourFileName.pdf')
+
 Security Note
 To avoid hardcoding sensitive information, consider storing credentials securely in environment variables or a secrets manager.
 
