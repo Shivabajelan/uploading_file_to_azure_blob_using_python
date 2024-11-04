@@ -27,7 +27,7 @@ Note: Do not hardcode sensitive information directly in your scripts. Instead, r
 
 In the script, replace the following placeholders with your own Azure credentials:
 
-**python Code**
+**python Code:**
 
 storage_account_key = "<Your-Account-Key>"
 storage_account_name = "<Your-Account-Name>"
@@ -40,17 +40,9 @@ To upload a file, call the UploadToBlobStorage function and provide:
 
 * file_path: Local path of the file you want to upload.
 * file_name: Desired path and name of the file in Azure Blob Storage.
-Example usage:
 
-python
-Copy code
-UploadToBlobStorage('path/to/your/local/file.pdf', 'MyFolder/YourFileName.pdf')
-Code Explanation
-Here’s a breakdown of the code:
+![image](https://github.com/user-attachments/assets/65f0e39e-b78d-4d61-9d5d-cd9a35264026)
 
-python
-Copy code
-from azure.storage.blob import BlobServiceClient
 
 # Define Azure Storage credentials
 storage_account_key = "<Your-Account-Key>"
