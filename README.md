@@ -52,14 +52,4 @@ To upload a file, call the UploadToBlobStorage function and provide:
 
  * Call the function with your file path and desired blob name
 
-Security Note
-To avoid hardcoding sensitive information, consider storing credentials securely in environment variables or a secrets manager.
-
-Example using environment variables:
-
-python
-Copy code
-import os
-
-connection_string = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
-This script provides a quick and efficient way to upload files to Azure Blob Storage, making it easier to manage unstructured data storage with Python.
+Please reach out if you would like to discuss the details of this process more in depth!
