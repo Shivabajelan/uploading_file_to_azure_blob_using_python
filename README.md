@@ -1,13 +1,13 @@
 # uploading_file_to_azure_blob_using_python
 
-Azure Blob Storage File Uploader
+# Azure Blob Storage File Uploader
 This Python script automates the upload of unstructured data, such as PDF or PNG files, to Azure Blob Storage. With a few parameters and a file path, you can securely upload files to your Azure storage container using Python.
 
-Prerequisites
+## Prerequisites
 To use this script, ensure you have:
 
-An Azure Storage Account with a container created.
-The azure-storage-blob package installed. If not, install it via:
+* An Azure Storage Account with a container created.
+* The azure-storage-blob package installed. If not, install it via:
 bash
 Copy code
 pip install azure-storage-blob
