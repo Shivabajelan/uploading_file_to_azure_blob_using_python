@@ -41,15 +41,16 @@ To upload a file, call the UploadToBlobStorage function and provide:
 * file_path: Local path of the file you want to upload.
 * file_name: Desired path and name of the file in Azure Blob Storage.
 
-** Here is the Python code. Replace the Azure Storage Credentials, specify your desired file_path, file_name, and easily upload your data on the strage in Azure. **
+**Here is the Python code. Replace the Azure Storage Credentials, specify your desired file_path, file_name, and easily upload your data on the strage in Azure.**
 ![image](https://github.com/user-attachments/assets/85695f24-1cd7-4c06-aa65-726bd2c02778)
 
-### This is what I did in the block of code:
-# Define Azure Storage credentials
+## This is what I did in the block of code in summary:
+* Define Azure Storage credentials
 
-# Define function to upload files to Azure Blob Storage
+* Define function to upload files to Azure Blob Storage
 
-# Call the function with your file path and desired blob name
+
+ * Call the function with your file path and desired blob name
 
 Security Note
 To avoid hardcoding sensitive information, consider storing credentials securely in environment variables or a secrets manager.
