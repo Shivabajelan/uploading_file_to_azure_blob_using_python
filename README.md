@@ -7,18 +7,19 @@ This Python script automates the upload of unstructured data, such as PDF or PNG
 To use this script, ensure you have:
 
 * An Azure Storage Account with a container created.
-* The azure-storage-blob package installed. If not, install it via:
-bash
-Copy code
-pip install azure-storage-blob
-Setup and Usage
-Step 1: Configure Your Azure Storage Credentials
+* The **azure-storage-blob** package installed.
+ If not, install it via:
+
+"pip install azure-storage-blob" in the terminal.
+
+## Setup and Usage
+**Step 1: Configure Your Azure Storage Credentials**
 Before running the script, set up your Azure credentials:
 
-Account Key
-Account Name
-Connection String
-Container Name
+- Account Key
+- Account Name
+- Connection String
+- Container Name
 Note: Do not hardcode sensitive information directly in your scripts. Instead, retrieve them securely from environment variables or a secrets manager.
 
 Step 2: Update the Script with Your Parameters
