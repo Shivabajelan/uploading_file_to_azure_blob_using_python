@@ -30,8 +30,11 @@ In the script, replace the following placeholders with your own Azure credential
 **python Code:**
 
 storage_account_key = "<Your-Account-Key>"
+
 storage_account_name = "<Your-Account-Name>"
+
 connection_string = "<Your-Connection-String>"
+
 container_name = "<Your-Container-Name>"
 
 **Step 3: Upload a File**
